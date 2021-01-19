@@ -62,7 +62,7 @@ class PicoPagesList extends AbstractPicoPlugin
      */
     public function onSinglePageLoaded(array &$pageData)
     {
-        $pageData['placing'] = $pageData['meta']['placing'] ?? $pageData['title'];
+        $pageData['placing'] = $pageData['meta']['placing'] . '-' . $pageData['title'];
     }
 
     /**
